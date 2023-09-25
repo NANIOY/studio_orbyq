@@ -203,7 +203,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 25px;
 }
 
 .social-media li{
@@ -251,22 +251,6 @@
 }
 
 @media (max-width: 540px) {
-    .carousel-container {
-        margin-top: 128px !important;
-    }
-
-    .home-project-images {
-        width: 408px;
-        height: 408px;
-    }
-
-    .project-image {
-        width: 408px;
-        height: 408px;
-    }
-}
-
-@media (max-width: 540px) {
     .home-project-images {
         width: 328px;
         height: 328px;
@@ -284,5 +268,12 @@
     }
     body {
     overflow: auto;
+    }
+}
+
+@media (min-width: 1312px) {
+    .social-media {
+        position: fixed;
+        right: calc((100% - 1312px) / 2);
     }
 }
