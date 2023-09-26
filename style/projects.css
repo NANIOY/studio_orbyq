@@ -103,3 +103,13 @@
 	color: #F5F5F5;
 	background: #927AF4;
 }
+
+.project-column p {
+    font-family: 'Body-Regular';
+    font-size: 14px;
+}
+
+.year {
+    font-size: 16px !important;
+    font-family: 'Body-SemiBold' !important;
+}
