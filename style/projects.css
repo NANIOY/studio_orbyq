@@ -1,3 +1,26 @@
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.horizontal-stack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.project-horizontal {
+    width: 640px;
+    margin-bottom: 20px;
+}
+
+.project-vertical {
+    width: 624px;
+    margin-bottom: 20px;
+}
+
 .projects-image-small {
     width: 640px;
     height: 360px;
