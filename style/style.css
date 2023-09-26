@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: 'Body-SemiBold';
+    src: url('../fonts/body/Sloth-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Body-Bold';
     src: url('../fonts/body/SLOTH\ BOLD.ttf') format('truetype');
 }
