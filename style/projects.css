@@ -34,3 +34,72 @@
     width: 624px;
     height: 876px;
 }
+
+.tags {
+	width: 100%;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: flex-end;
+	gap: 8px;
+	display: inline-flex;
+	margin-top: -200px;
+	margin-left: -20px;
+    background-color: red;
+}
+
+.tag {
+	text-align: center;
+	font-size: 10px;
+	font-family: Body-Bold;
+	font-weight: 100;
+	text-transform: uppercase;
+	line-height: 15px;
+	word-wrap: break-word;
+	padding: 4px 8px;
+	border-radius: 2px;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	display: flex;
+}
+
+.Eye {
+	width: 14px;
+	height: 14px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.eye-black {
+	background-image: url("https://studio-orbyq.com/wp-content/uploads/2023/07/black.svg");
+}
+
+.eye-white {
+	background-image: url("https://studio-orbyq.com/wp-content/uploads/2023/07/styleguide.svg");
+}
+
+.tag-branding {
+	color: #040404;
+	background: #07F52C;
+}
+
+.tag-website {
+	color: #F5F5F5;
+	background: #4A21ED;
+}
+
+.tag-app {
+	color: #040404;
+	background: #F5F5F5;
+}
+
+.tag-styleguide {
+	color: #040404;
+	background: #6AF980;
+}
+
+.tag-visuals {
+	color: #F5F5F5;
+	background: #927AF4;
+}
