@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'Heading-ExtraBold';
+    font-family: 'Twilio-Sans-Mono-ExtraBold';
     src: url('../fonts/heading/TwilioSansMono-Extrabold.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'Heading-Bold';
+    font-family: 'Twilio-Sans-Mono-Bold';
     src: url('../fonts/heading/TwilioSansMono-Bold.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'Body-Regular';
+    font-family: 'Sloth-Regular';
     src: url('../fonts/body/Sloth-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Body-SemiBold';
+    font-family: 'Sloth-SemiBold';
     src: url('../fonts/body/Sloth-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Body-Bold';
+    font-family: 'Sloth-Bold';
     src: url('../fonts/body/SLOTH\ BOLD.ttf') format('truetype');
 }
 
@@ -67,7 +67,7 @@ body {
 .site-title {
     margin-right: 126.5px;
     font-size: 20px;
-    font-family: 'Heading-Bold';
+    font-family: 'Twilio-Sans-Mono-Bold';
     font-weight: 100;
 }
 
@@ -119,7 +119,7 @@ body {
 .main-menu a {
     text-decoration: none;
     color: #F5F5F5;
-    font-family: 'Body-Bold';
+    font-family: 'Sloth-Bold';
     font-size: 16px;
     text-transform: uppercase;
     display: inline-block;
