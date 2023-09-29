@@ -115,7 +115,9 @@
     margin-top: -40px   ;
 }
 
-.column-header h4 {
+.column-header h2 {
+    font-family: 'Twilio-Sans-Mono-Bold';
+    font-size: 32px;
     flex: 90%;
     margin: 0;
 }
