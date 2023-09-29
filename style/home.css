@@ -144,7 +144,7 @@
 .icon-list-items {
     display: flex;
     list-style: none;
-    font-family: 'Body-Regular';
+    font-family: 'Sloth-Regular';
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -188,7 +188,7 @@
 
 .heading-title {
     margin-top: 48px;
-    font-family: 'Heading-Bold';
+    font-family: 'Twilio-Sans-Mono-Bold';
 }
 
 .heading-title,
