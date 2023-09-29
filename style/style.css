@@ -27,36 +27,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
 }
 
-h1 {
-    font-family: 'Heading-ExtraBold';
-    font-size: 64px;
-}
-
-h2 {
-    font-family: 'Heading-ExtraBold';
-    font-size: 48px;
-}
-
-h3 {
-    font-family: 'Heading-ExtraBold';
-    font-size: 40px;
-}
-
-h4 {
-    font-family: 'Heading-ExtraBold';
-    font-size: 32px;
-}
-
-h5 {
-    font-family: 'Heading-Bold';
-    font-size: 24px;
-}
-
-h6 {
-    font-family: 'Heading-Bold';
-    font-size: 20px;
-}
-
 body {
     background-color: #040404;
     color: white;
