@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', function () {
         siteTitle.style.display = 'none';
     }
 
-    const imageZoomContainers = document.querySelectorAll('.image-zoom');
+    const imageContainers = document.querySelectorAll('.image-container');
 
-    imageZoomContainers.forEach((container) => {
+    imageContainers.forEach((container) => {
         container.addEventListener('mouseenter', () => {
-            const img = container.querySelector('img');
+            const img = container.querySelector('.image-zoom');
             img.style.transform = 'scale(1.2)';
         });
 
         container.addEventListener('mouseleave', () => {
-            const img = container.querySelector('img');
+            const img = container.querySelector('.image-zoom');
             img.style.transform = 'scale(1)';
         });
     });
