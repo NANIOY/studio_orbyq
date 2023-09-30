@@ -200,11 +200,11 @@ body {
 .footer-logo-image {
     width: 104px;
     height: 104px;
+    transition: transform 8000s;
 }
 
 .footer-logo-image:hover {
     transform: rotate(3600000deg);
-    transition: transform 10000s;
 }
 
 .contact-info {
