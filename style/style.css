@@ -197,6 +197,11 @@ body {
     text-align: center;
 }
 
+.footer-logo-image {
+    width: 104px;
+    height: 104px;
+}
+
 .contact-info, .social-media {
     margin-top: 12px;
 }
