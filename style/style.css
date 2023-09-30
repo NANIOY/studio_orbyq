@@ -180,11 +180,10 @@ body {
     background-image: url('../images/icons/header/svg/contact/contact-active.svg');
 }
 
-.image-zoom {
+.image-container {
     overflow: hidden;
 }
 
-/* Scale the image on hover */
-.image-zoom:hover {
+.image-zoom {
     transition: transform 0.3s;
 }
