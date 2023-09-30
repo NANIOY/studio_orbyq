@@ -21,7 +21,7 @@
 
 .project-horizontal {
     width: 640px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .project-vertical {
@@ -42,7 +42,7 @@ img {
 
 .projects-image-large {
     width: 624px;
-    height: 876px;
+    height: 874px;
 }
 
 .tags {
