@@ -187,3 +187,42 @@ body {
 .image-zoom {
     transition: transform 0.4s;
 }
+
+.footer {
+    margin-top: 80px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info, .social-media {
+    margin-top: 12px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #07F52C;
+    font-family: 'Twilio-Sans-Mono-Bold';
+    font-weight: 100;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.social-media-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-item {
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.social-media-icon {
+    width: 40px;
+    height: 40px;
+}
