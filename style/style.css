@@ -184,6 +184,18 @@ body {
     overflow: hidden;
 }
 
+.image-container-vertical {
+    width: 624px;
+    height: 874px;
+    overflow: hidden;
+}
+
+.image-container-horizontal {
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+
 .image-zoom {
     transition: transform 0.4s;
 }
