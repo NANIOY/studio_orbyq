@@ -11,4 +11,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if (document.title === 'Home | Studio Orbyq') {
         siteTitle.style.display = 'none';
     }
+
+    const imageZoomContainers = document.querySelectorAll('.image-zoom');
+
+    imageZoomContainers.forEach((container) => {
+        container.addEventListener('mouseenter', () => {
+            const img = container.querySelector('img');
+            img.style.transform = 'scale(1.2)';
+        });
+
+        container.addEventListener('mouseleave', () => {
+            const img = container.querySelector('img');
+            img.style.transform = 'scale(1)';
+        });
+    });
 });
