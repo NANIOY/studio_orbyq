@@ -122,6 +122,11 @@ img.banner {
     box-sizing: border-box;
 }
 
+.project-header-small {
+    font-family: 'Twilio-Sans-Mono-Bold';
+    font-size: 24px !important;
+}
+
 .info-box {
     margin-bottom: 20px;
 }
