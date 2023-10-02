@@ -1,0 +1,32 @@
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+img.banner {
+    max-width: 1312px;
+    height: 738px;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
