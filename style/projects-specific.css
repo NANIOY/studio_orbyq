@@ -41,3 +41,33 @@ img.banner {
     margin-bottom: 24px;
     margin-top: 32px;
 }
+
+.icon-list {
+    font-family: 'Sloth-Bold';
+}
+
+.icon-list-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+}
+
+.icon-list-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-list-text {
+    font-size: 14px;
+    margin-left: 4px;
+    text-transform: uppercase;
+}
+
