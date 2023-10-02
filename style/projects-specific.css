@@ -72,14 +72,16 @@ img.banner {
     text-transform: uppercase;
 }
 
-.left-column {
-    width: 60%;
-    float: right;
-    box-sizing: border-box;
-    text-align: left;
+
+.double-column {
+    margin-top: 8px;
 }
 
-.project-description {
+.left-column {
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
     font-family: 'Sloth-Regular';
     font-size: 16px;
 }
@@ -95,7 +97,7 @@ img.banner {
 
 .link-list li a {
     text-decoration: none;
-    color: #007BFF;
+    color: #4A21ED;
 }
 
 /* Right Column */
