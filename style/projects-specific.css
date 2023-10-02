@@ -82,6 +82,9 @@ img.banner {
     float: left;
     box-sizing: border-box;
     text-align: left;
+}
+
+.project-text-normal {
     font-family: 'Sloth-Regular';
     font-size: 16px;
 }
