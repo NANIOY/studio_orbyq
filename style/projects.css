@@ -139,3 +139,8 @@ img {
     font-size: 16px !important;
     font-family: 'Sloth-SemiBold' !important;
 }
+
+.project-link {
+    text-decoration: none;
+    color: #F5F5F5;
+}
