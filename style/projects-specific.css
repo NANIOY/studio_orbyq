@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items:flex-start ;
+    align-items: flex-start;
 }
 
 img.banner {
@@ -88,7 +88,18 @@ img.banner {
 
 .link-list {
     list-style-type: none;
-    padding: 0;
+    padding: 8px 0 0 0;
+}
+
+.custom-list-item {
+    padding-left: 16px;
+    position: relative;
+}
+
+.custom-list-item:before {
+    content: "-";
+    position: absolute;
+    left: 0;
 }
 
 .link-list li {
