@@ -195,6 +195,10 @@ img.banner {
     display: flex;
 }
 
+.image-layout-2 div:first-child {
+    margin-right: 24px;
+}
+
 .project-image-square img{
     width: 640px;
     height: 640px;
