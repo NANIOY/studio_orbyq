@@ -29,14 +29,26 @@
     margin-bottom: 20px;
 }
 
-.projects-image-small {
+.image-container-vertical {
+    width: 624px;
+    height: 856px;
+    overflow: hidden;
+}
+
+.image-container-horizontal {
     width: 640px;
     height: 360px;
+    overflow: hidden;
+}
+
+.projects-image-small {
+    width: 100%;
+    height: 100%;
 }
 
 .projects-image-large {
-    width: 624px;
-    height: 874px;
+    width: 100%;
+    height: 100%;
 }
 
 .tags {
