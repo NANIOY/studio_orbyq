@@ -167,7 +167,6 @@ img.banner {
 
 /* IMAGE SECTION  1*/
 .image-layout-1 {
-    margin-bottom: 20px; 
     display: flex;
 }
 
@@ -193,6 +192,7 @@ img.banner {
 /* IMAGE SECTION 2 */
 .image-layout-2 {
     display: flex;
+    margin-top: 20px; 
 }
 
 .image-layout-2 div:first-child {
@@ -202,4 +202,24 @@ img.banner {
 .project-image-square img{
     width: 640px;
     height: 640px;
+}
+
+/* IMAGE SECTION 3 */
+.image-layout-3 {
+    display: flex;
+    margin-top: 20px; 
+}
+
+.image-layout-3 div:first-child {
+    margin-right: 24px;
+}
+
+.project-image-30 img{
+    width: 376px;
+    height: 508px;
+}
+
+.project-image-70 img{
+    width: 904px;
+    height: 508px;
 }
