@@ -77,6 +77,8 @@ img.banner {
     margin-top: 8px;
 }
 
+
+/* LEFT COLUMN */
 .left-column {
     width: 60%;
     float: left;
@@ -114,7 +116,8 @@ img.banner {
     color: #4A21ED;
 }
 
-/* Right Column */
+
+/* RIGHT COLUMN */
 .right-column {
     width: 31%;
     float: left;
@@ -152,6 +155,8 @@ img.banner {
     margin: 0;
 }
 
+
+/* IMAGE SECTION  */
 .image-layout {
     display: flex;
     flex-wrap: wrap;
@@ -176,9 +181,9 @@ img.banner {
 
 .project-image-stack div img {
     width: 416px;
-    height: 224px;
+    height: 230px;
 }
 
 .project-image-stack div:first-child {
-    margin-bottom: 34px;
+    margin-bottom: 20px;
 }
