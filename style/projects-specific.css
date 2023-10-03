@@ -165,6 +165,11 @@ img.banner {
     margin-top: 64px;
 }
 
+.image-layout-top {
+    margin-bottom: 20px; 
+    display: flex;
+}
+
 .project-image-large {
     flex: 0 0 66%;
 }
