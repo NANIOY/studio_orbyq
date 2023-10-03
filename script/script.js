@@ -17,12 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
     imageContainers.forEach((container) => {
         container.addEventListener('mouseenter', () => {
             const img = container.querySelector('.image-zoom');
-            img.style.transform = 'scale(1.2)';
+            if (img) {
+                img.style.transform = 'scale(1.2)';
+            }
         });
 
         container.addEventListener('mouseleave', () => {
             const img = container.querySelector('.image-zoom');
-            img.style.transform = 'scale(1)';
+            if (img) {
+                img.style.transform = 'scale(1)';
+            }
         });
     });
 });
