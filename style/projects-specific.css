@@ -151,3 +151,33 @@ img.banner {
 .info-box p {
     margin: 0;
 }
+
+.image-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1312px;
+}
+
+.project-image-large {
+    flex: 0 0 66%;
+}
+
+.project-image-stack {
+    flex: 0 0 30%;
+    background-color: red;
+}
+
+.project-image-large img{
+    width: 864px;
+    height: 486px;
+}
+
+.project-image-stack div img {
+    width: 416px;
+    height: 224px;
+}
+
+.project-image-stack div:first-child {
+    margin-bottom: 34px;
+}
