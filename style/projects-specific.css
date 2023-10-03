@@ -156,7 +156,7 @@ img.banner {
 }
 
 
-/* IMAGE SECTION  */
+/* IMAGE LAYOUT */
 .image-layout {
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +165,8 @@ img.banner {
     margin-top: 64px;
 }
 
-.image-layout-top {
+/* IMAGE SECTION  1*/
+.image-layout-1 {
     margin-bottom: 20px; 
     display: flex;
 }
@@ -191,4 +192,11 @@ img.banner {
 
 .project-image-stack div:first-child {
     margin-bottom: 20px;
+}
+
+
+/* IMAGE SECTION 2 */
+.project-image-square img{
+    width: 640px;
+    height: 640px;
 }
