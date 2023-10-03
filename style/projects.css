@@ -29,12 +29,6 @@
     margin-bottom: 20px;
 }
 
-img {
-    object-fit: cover;
-    object-position: center;
-    border-radius: 2px;
-}
-
 .projects-image-small {
     width: 640px;
     height: 360px;

@@ -37,6 +37,13 @@ body {
     color: white;
 }
 
+img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2px;
+}
+
+
 .site-header {
     height: 88px;
     background-color: rgba(4, 4, 4, 0.8);
