@@ -2,6 +2,11 @@ body {
     color: #f5f5f5;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .container {
     text-align: center;
     padding: 20px;
@@ -16,11 +21,6 @@ body {
     max-width: 100%;
     height: 738px;
     margin-top: 96px;
-}
-
-.image-banner {
-    width: 100%;
-    height: 100%;
 }
 
 .back-button {
@@ -184,7 +184,7 @@ body {
     height: 486px;
 }
 
-.project-image-stack div img {
+.project-image-stack div {
     width: 416px;
     height: 231.5px;
 }
@@ -204,7 +204,7 @@ body {
     margin-right: 24px;
 }
 
-.project-image-square img{
+.project-image-square {
     width: 640px;
     height: 640px;
 }
@@ -219,12 +219,12 @@ body {
     margin-right: 24px;
 }
 
-.project-image-30 img{
+.project-image-30{
     width: 376px;
     height: 508px;
 }
 
-.project-image-70 img{
+.project-image-70{
     width: 904px;
     height: 508px;
 }
