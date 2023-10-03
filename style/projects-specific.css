@@ -171,12 +171,7 @@ img.banner {
     display: flex;
 }
 
-.project-image-large {
-    flex: 0 0 66%;
-}
-
 .project-image-stack {
-    flex: 0 0 30%;
     margin-left: 24px;
 }
 
@@ -196,6 +191,10 @@ img.banner {
 
 
 /* IMAGE SECTION 2 */
+.image-layout-2 {
+    display: flex;
+}
+
 .project-image-square img{
     width: 640px;
     height: 640px;
