@@ -163,23 +163,23 @@
 }
 
 .branding-icon {
-    background-image: url('../images/icons/labels/svg/icons/branding.svg');
+    background-image: url('../images/icons/labels/svg/branding.svg');
 }
 
 .website-icon {
-    background-image: url('../images/icons/labels/svg/icons/website.svg');
+    background-image: url('../images/icons/labels/svg/website.svg');
 }
 
 .app-icon {
-    background-image: url('../images/icons/labels/svg/icons/white.svg');
+    background-image: url('../images/icons/labels/svg/app.svg');
 }
 
 .styleguide-icon {
-    background-image: url('../images/icons/labels/svg/icons/styleguide.svg');
+    background-image: url('../images/icons/labels/svg/styleguide.svg');
 }
 
 .visuals-icon {
-    background-image: url('../images/icons/labels/svg/icons/visuals.svg');
+    background-image: url('../images/icons/labels/svg/visuals.svg');
 }
 
 .heading-title {
