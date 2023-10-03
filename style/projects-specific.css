@@ -157,6 +157,7 @@ img.banner {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1312px;
+    margin-top: 64px;
 }
 
 .project-image-large {
@@ -165,10 +166,10 @@ img.banner {
 
 .project-image-stack {
     flex: 0 0 30%;
-    background-color: red;
+    margin-left: 24px;
 }
 
-.project-image-large img{
+.project-image-large img {
     width: 864px;
     height: 486px;
 }
