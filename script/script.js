@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         container.addEventListener('mouseenter', () => {
             const img = container.querySelector('.image-zoom');
             if (img) {
-                img.style.transform = 'scale(1.2)';
+                img.style.transform = 'scale(1.15)';
             }
         });
 
