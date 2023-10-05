@@ -32,15 +32,31 @@ h6 {
     line-height: 1.1em;
 }
 
+
 body {
     background-color: #040404;
     color: white;
+    scroll-behavior: smooth;
 }
 
 img {
     object-fit: cover;
     object-position: center;
     border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #333333;
 }
 
 
@@ -262,9 +278,8 @@ img {
 
 .social-media ul li {
     transition: filter 0.3s ease-in-out;
-  }
-  
-  .social-media ul li:hover {
+}
+
+.social-media ul li:hover {
     filter: brightness(1) hue-rotate(120deg) invert(90%);
-  }
-  
+}
