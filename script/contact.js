@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
   
     // Select the <p> element
-    let pElement = document.querySelector('.random-quote div p');
+    let pElement = document.querySelector('.random-quote p');
   
      // Function to generate a random quote and update the <p> element
     function generateRandomQuote() {
