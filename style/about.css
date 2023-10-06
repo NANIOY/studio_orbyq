@@ -26,3 +26,36 @@
     max-width: 100%;
     word-wrap: break-word;
 }
+
+.horizontal-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1312px;
+    margin: 96px auto 0;
+  }
+  
+  .list-item {
+    flex: 0 0 calc(20% - 10px);
+    text-align: center;
+    margin: 0 36px;
+    color: #f5f5f5;
+  }
+  
+  .list-item img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .list-item h3 {
+    font-size: 24px;
+    margin: 20px 0 -2px 0;
+    font-family: 'Twilio-Sans-Mono-Bold';
+    font-weight: 100;
+  }
+  
+  .list-item p {
+    font-size: 16px;
+    font-family: 'Sloth-Regular';
+  }
+  
