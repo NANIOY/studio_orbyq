@@ -18,3 +18,14 @@
     text-align: center;
     user-select: none;
 }
+
+.email {
+    text-decoration: none;
+}
+
+.email h2 {
+    font-family: 'Twilio-Sans-Mono-ExtraBold', sans-serif;
+    font-size: 64px;
+    color: #07F52C;
+    margin-top: 256px;
+}
