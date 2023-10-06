@@ -43,6 +43,7 @@ img {
     object-fit: cover;
     object-position: center;
     border-radius: 2px;
+    user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -71,6 +72,7 @@ img {
     top: 0;
     left: 0;
     z-index: 1000;
+    user-select: none;
 }
 
 .header-container {
