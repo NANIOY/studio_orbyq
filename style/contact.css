@@ -1,6 +1,6 @@
 .contact-content {
     position: relative;
-    width: 1312px;
+    max-width: 1312px;
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -17,6 +17,7 @@
     font-family: 'Sloth-Regular', sans-serif;
     text-align: center;
     user-select: none;
+    margin-bottom: 288px;
 }
 
 .email {
@@ -27,5 +28,26 @@
     font-family: 'Twilio-Sans-Mono-ExtraBold', sans-serif;
     font-size: 64px;
     color: #07F52C;
-    margin-top: 256px;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin-top: 472px;
+    display: inline-block;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 20px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.social-media li:hover {
+    filter: brightness(1) hue-rotate(120deg) invert(90%);
 }
