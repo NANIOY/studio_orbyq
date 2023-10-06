@@ -53,19 +53,19 @@
 .first-image {
     z-index: 3;
     opacity: 1;
-    background-image: url("../images/projects/ixpo/ixpo-banner.png");
+    background-image: url("../images/projects/ixpo/ixpo-banner.webp");
 }
 
 .second-image {
     z-index: 2;
     opacity: 0;
-    background-image: url("../images/projects/copoll/copoll-banner2.png");
+    background-image: url("../images/projects/copoll/copoll-banner2.webp");
 }
 
 .third-image {
     z-index: 1;
     opacity: 0;
-    background-image: url("../images/projects/studio-orbyq/small/studio_orbyq-banner.png");
+    background-image: url("../images/projects/studio-orbyq/studio_orbyq-banner.webp");
 }
 
 .carousel .home-project-images {

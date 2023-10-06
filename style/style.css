@@ -86,7 +86,7 @@ img {
 }
 
 .logo a {
-    background-image: url('../images/logo/monochrome-white.png');
+    background-image: url('../images/logo/monochrome-white.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
