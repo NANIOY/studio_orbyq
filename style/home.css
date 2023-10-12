@@ -140,17 +140,20 @@
 .icon-list-items {
     display: flex;
     list-style: none;
-    font-family: 'Sloth-Regular';
+    font-family: 'Sloth-SemiBold';
     font-size: 14px;
-    font-weight: 600;
     text-transform: uppercase;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .icon-list-item {
     list-style: none;
     display: flex;
-    align-items: center;
     margin-right: 28px;
+    margin-bottom: 4px;
 }
 
 .icon-list-icon {
@@ -249,13 +252,13 @@
 
 @media (max-width: 540px) {
     .home-project-images {
-        width: 328px;
-        height: 328px;
+        width: 440px;
+        height: 440px;
     }
 
     .project-image {
-        width: 328px;
-        height: 328px;
+        width: 440px;
+        height: 440px;
     }
 }
 
