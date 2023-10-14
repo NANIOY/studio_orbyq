@@ -11,7 +11,10 @@
 
 .projects-container-top {
     margin-top: 112px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .horizontal-stack {
     display: flex;
@@ -22,34 +25,47 @@
 .project-horizontal {
     width: 640px;
     margin-bottom: 32px;
+    float: none;
 }
 
 .project-vertical {
-    width: 624px;
+    width: 640px;
     margin-bottom: 20px;
+    margin-left: auto;
 }
 
-.image-container-vertical {
-    width: 624px;
-    height: 856px;
+@media (max-width: 1332px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-horizontal,
+    .project-vertical {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .project-vertical {
+        margin-top: 20px;
+    }
+}
+
+.image-container-vertical,
+.image-container-horizontal {
+    width: 100%;
     overflow: hidden;
 }
 
 .image-container-horizontal {
-    width: 640px;
-    height: 360px;
-    overflow: hidden;
+    height: 369px;
 }
 
-.projects-image-small {
-    width: 100%;
-    height: 100%;
-}
-
+.projects-image-small,
 .projects-image-large {
     width: 100%;
     height: 100%;
 }
+
 
 .tags {
     width: 100%;
