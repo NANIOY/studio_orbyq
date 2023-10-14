@@ -215,6 +215,17 @@ img {
     background-image: url('../images/icons/header/svg/contact/contact-default.svg');
 }
 
+.menu-item-contact:hover {
+    background-image: url('../images/icons/header/svg/contact/contact-active.svg');
+}
+
+.active {
+    color: #07F52C !important;
+}
+
+.active:hover {
+    color: #04931A !important;
+}
 
 .image-container {
     overflow: hidden;
