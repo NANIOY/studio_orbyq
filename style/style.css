@@ -96,10 +96,15 @@ img {
 }
 
 .site-title {
-    margin-right: 126.5px;
+    margin-right: auto;
+    margin-left:auto;
     font-size: 20px;
     font-family: 'Twilio-Sans-Mono-Bold';
     font-weight: 100;
+}
+
+.menu-container {
+    width: 148px;
 }
 
 .menu-toggle {
@@ -108,8 +113,9 @@ img {
     width: 28px;
     background-image: url('../images/icons/header/svg/menu.svg');
     background-size: 100%;
-    margin-bottom: -4px;
     background-repeat: no-repeat;
+    margin-bottom: -4px;
+    margin-left: auto;
 }
 
 .main-menu {
@@ -284,4 +290,17 @@ img {
 
 .social-media ul li:hover {
     filter: brightness(1) hue-rotate(120deg) invert(90%);
+}
+
+@media (max-width: 596px) {
+    .logo a{
+        width: 136px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 448px) {
+    .site-title {
+        display: none;
+    }
 }
