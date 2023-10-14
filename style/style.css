@@ -49,6 +49,11 @@ img {
     user-select: none;
 }
 
+:root{
+    scrollbar-color: #444 #040404;
+    scrollbar-width: thin;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
