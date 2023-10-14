@@ -4,11 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const siteTitle = document.querySelector('.site-title');
 
     menuToggle.addEventListener('click', function (event) {
-        event.stopPropagation(); // Prevent the click event from propagating to document
+        event.stopPropagation();
         mainMenu.classList.toggle('active');
     });
 
-    // Check if the current page's title is 'Home | Studio Orbyq' and hide the site title if true
     if (document.title === 'Home | Studio Orbyq') {
         siteTitle.style.display = 'none';
     }
@@ -31,11 +30,34 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Add a click event listener to the document to close the menu when clicking outside
     document.addEventListener('click', function (event) {
         if (!event.target.closest('#main-menu')) {
-            // Check if the clicked element or any of its ancestors is not part of the menu
-            mainMenu.classList.remove('active'); // Close the menu
+            mainMenu.classList.remove('active');
         }
     });
+
+    const currentHeaderText = document.querySelector('.site-title');
+    const menuItems = document.querySelectorAll('.main-menu ul li');
+    const currentPage = window.location.pathname;
+
+    menuItems.forEach((item) => {
+        const anchor = item.querySelector('a');
+        if (anchor.textContent === currentHeaderText.textContent) {
+            anchor.classList.add('active');
+            item.style.backgroundImage = `url('../images/icons/header/svg/${anchor.textContent.toLowerCase()}/${anchor.textContent.toLowerCase()}-active.svg')`;
+        } else if (anchor.textContent === 'Home' && currentPage.includes('index.html')) {
+            anchor.classList.add('active');
+            item.style.backgroundImage = `url('../images/icons/header/svg/home/home-active.svg')`;
+        } else if (anchor.textContent === 'Projects' && currentPage.includes('projects.html')) {
+            anchor.classList.add('active');
+            item.style.backgroundImage = `url('../images/icons/header/svg/projects/projects-active.svg')`;
+        } else if (anchor.textContent === 'About' && currentPage.includes('about.html')) {
+            anchor.classList.add('active');
+            item.style.backgroundImage = `url('../images/icons/header/svg/about/about-active.svg')`;
+        } else if (anchor.textContent === 'Contact' && currentPage.includes('contact.html')) {
+            anchor.classList.add('active');
+            item.style.backgroundImage = `url('../images/icons/header/svg/contact/contact-active.svg')`;
+        }
+    });
+
 });
