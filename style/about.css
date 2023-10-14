@@ -98,6 +98,7 @@
 .more-text {
     font-size: 20px;
     font-family: 'Sloth-Regular';
+    text-align: justify;
 }
 
 .more-text-1, .more-text-2, .more-text-3 {
@@ -136,5 +137,49 @@
         font-weight: 100;
         font-size: 16px;
         width: 80%;
+    }
+}
+
+@media (max-width: 1344px) { 
+    .image-text-section {
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .image-container {
+        width: 50%;
+        height: auto;
+        margin-right: 5.5%;
+        margin-top: -16px;
+    }
+    .more-heading {
+        font-size: 48px;
+    }
+    .more-text {
+        font-size: 16px;
+        font-family: 'Sloth-Regular';
+    }
+    
+    .more-text-1, .more-text-2, .more-text-3 {
+        padding-bottom: 12px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    
+    .left-column {
+        top: 0;
+    }
+    
+    .right-column {
+        top: 100%;
+    }
+}
+
+@media (max-width: 1081px) {
+    .image-container {
+        display: none;
     }
 }
