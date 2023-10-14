@@ -97,7 +97,7 @@ img {
 
 .site-title {
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
     font-size: 20px;
     font-family: 'Twilio-Sans-Mono-Bold';
     font-weight: 100;
@@ -165,6 +165,11 @@ img {
     display: inline-block;
     position: relative;
     right: 32px;
+    transition: color 0.1s;
+}
+
+.main-menu a:hover {
+    color: #07F52C;
 }
 
 @media (min-width: 1312px) {
@@ -186,33 +191,30 @@ img {
     background-image: url('../images/icons/header/svg/home/home-default.svg');
 }
 
-.menu-item-projects {
-    background-image: url('../images/icons/header/svg/projects/projects-default.svg');
-}
-
-.menu-item-about {
-    background-image: url('../images/icons/header/svg/about/about-default.svg');
-}
-
-.menu-item-contact {
-    background-image: url('../images/icons/header/svg/contact/contact-default.svg');
-}
-
 .menu-item-home:hover {
     background-image: url('../images/icons/header/svg/home/home-active.svg');
+}
+
+.menu-item-projects {
+    background-image: url('../images/icons/header/svg/projects/projects-default.svg');
 }
 
 .menu-item-projects:hover {
     background-image: url('../images/icons/header/svg/projects/projects-active.svg');
 }
 
+.menu-item-about {
+    background-image: url('../images/icons/header/svg/about/about-default.svg');
+}
+
 .menu-item-about:hover {
     background-image: url('../images/icons/header/svg/about/about-active.svg');
 }
 
-.menu-item-contact:hover {
-    background-image: url('../images/icons/header/svg/contact/contact-active.svg');
+.menu-item-contact {
+    background-image: url('../images/icons/header/svg/contact/contact-default.svg');
 }
+
 
 .image-container {
     overflow: hidden;
@@ -296,7 +298,7 @@ img {
 }
 
 @media (max-width: 596px) {
-    .logo a{
+    .logo a {
         width: 136px;
         height: 40px;
     }
