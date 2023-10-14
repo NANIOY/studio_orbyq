@@ -1,4 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
+// Simulate a 2-second loading period
+const progressBar = document.querySelector('.progress-bar');
+setTimeout(function () {
+    progressBar.style.width = '100%';
+    progressBar.addEventListener('transitionend', function () {
+        const loadingScreen = document.querySelector('.loading-screen');
+        loadingScreen.style.opacity = 0;
+        loadingScreen.addEventListener('transitionend', function () {
+            loadingScreen.style.display = 'none';
+        }, { once: true });
+    }, { once: true });
+}, 90); // Adjust the duration as needed
+    
+    
+    
     const menuToggle = document.getElementById('menu-toggle');
     const mainMenu = document.getElementById('main-menu');
     const siteTitle = document.querySelector('.site-title');
