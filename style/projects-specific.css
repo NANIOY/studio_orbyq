@@ -241,25 +241,6 @@ body {
     height: auto;
 }
 
-
-
-/* Add media queries for smaller screens */
-@media (max-width: 768px) {
-    .image-layout-1,
-    .image-layout-2,
-    .image-layout-3 {
-        display: block;
-    }
-
-    .project-image-stack div,
-    .project-image-square,
-    .project-image-30,
-    .project-image-70 {
-        flex: 0 0 100%; /* Full width for single column layout */
-        margin: 0 0 20px 0; /* Add margin for spacing */
-    }
-}
-
 @media (max-width: 1374px) {
     .banner {
         width: 100%;
@@ -277,6 +258,67 @@ body {
     .right-column {
         width: 72%;
         margin-left: 0;
+        margin-top: 0;
+    }
+
+    .project-title {
+        margin-bottom: 0px;
+    }
+
+    .icon-list {
+        margin-bottom: -16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-layout-1,
+    .image-layout-2,
+    .image-layout-3 {
+        display: block;
+    }
+
+    .project-image-large,
+    .top,
+    .project-image-square,
+    .project-image-30 {
+        margin-bottom: 16px;
+    }
+
+    .project-image-large {
+        height: 55%;
+    }
+
+    .project-image-stack {
+        height: 40%;
+        margin-bottom: -75%;
+    }
+
+    .square-1,
+    .square-2 {
+        height: 35%;
+    }
+
+    .square-1 {
+        margin-bottom: 16px;
+        margin-top: -12px;
+    }
+
+    .image-layout-2 {
+        margin-bottom: -59%;
+    }
+
+    .image-container,
+    .project-image-stack {
+        width: 100%;
+    }
+
+    .project-image-30 {
+        height: 45%;
+    }
+
+    .project-image-70 {
+        height: 24%;
+        margin-bottom: -200%;
     }
 }
 
@@ -284,6 +326,15 @@ body {
     .right-column {
         width: 100%;
         margin-left: 0;
+    }
+
+    .site-title {
+        display: none;
+    }
+
+    .project-title {
+        text-align: left;
+        font-size: 48px;
     }
 }
 
