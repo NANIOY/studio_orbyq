@@ -60,7 +60,6 @@ img {
     background: #333333;
 }
 
-
 .site-header {
     height: 88px;
     background-color: rgba(4, 4, 4, 0.8);
@@ -101,6 +100,7 @@ img {
     font-size: 20px;
     font-family: 'Twilio-Sans-Mono-Bold';
     font-weight: 100;
+    text-transform: uppercase;
 }
 
 .menu-container {
