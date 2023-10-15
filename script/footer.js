@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         logoLink.classList.add('footer-logo-link');
 
         const logoImage = document.createElement('img');
-        logoImage.src = '../../images/logo/logomark.svg';
+        logoImage.src = '../images/logo/logomark.svg';
         logoImage.alt = 'logomark-white';
         logoImage.classList.add('footer-logo-image');
         logoImage.loading = 'lazy';
@@ -35,25 +35,28 @@ document.addEventListener('DOMContentLoaded', () => {
         socialMediaList.classList.add('social-media-list');
 
         const socialMediaItems = [
-            { href: 'https://www.behance.net/studio-orbyq', alt: 'Behance' },
-            { href: 'https://dribbble.com/Studio-Orbyq', alt: 'Dribbble' },
-            { href: 'https://letterboxd.com/NANIO/', alt: 'Letterboxd' },
+            { href: 'https://www.behance.net/studio-orbyq', alt: 'behance' },
+            { href: 'https://dribbble.com/Studio-Orbyq', alt: 'dribbble' },
+            { href: 'https://letterboxd.com/NANIO/', alt: 'letterboxd' },
         ];
-
+        
         socialMediaItems.forEach((item) => {
             const socialMediaItem = document.createElement('li');
             socialMediaItem.classList.add('social-media-item');
-
+        
             const socialMediaLink = document.createElement('a');
             socialMediaLink.href = item.href;
             socialMediaLink.classList.add('social-media-link');
             socialMediaLink.target = '_blank';
-
+        
             const socialMediaIcon = document.createElement('img');
-            socialMediaIcon.src = `../../images/footer/${item.alt}.svg`;
+        
+            // Set the image source path directly
+            socialMediaIcon.src = '../images/footer/' + item.alt + '.svg';
+        
             socialMediaIcon.alt = item.alt;
             socialMediaIcon.classList.add('social-media-icon');
-
+        
             socialMediaLink.appendChild(socialMediaIcon);
             socialMediaItem.appendChild(socialMediaLink);
             socialMediaList.appendChild(socialMediaItem);
