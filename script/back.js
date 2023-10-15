@@ -1,13 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Find the back button element by its class
-    const backButton = document.querySelector('.back-button');
+function setupBackButtons() {
+  const backButtons = document.querySelectorAll('.back-button');
 
-    // Check if the back button element exists
-    if (backButton) {
-        // Add a click event listener to the back button
-        backButton.addEventListener('click', function() {
-            // Go back in the browser's history
-            history.back();
-        });
-    }
-});
+  backButtons.forEach(function(backButton) {
+    backButton.addEventListener('click', function() {
+      history.back();
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', setupBackButtons);
