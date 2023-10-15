@@ -49,6 +49,10 @@ img {
     user-select: none;
 }
 
+button {
+    all: unset;
+}
+
 :root{
     scrollbar-color: #444 #040404;
     scrollbar-width: thin;
@@ -134,6 +138,7 @@ img {
 
 .menu-container {
     width: 148px;
+    display: flex;
 }
 
 .menu-toggle {
