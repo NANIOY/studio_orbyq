@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-    function createFooter() {
+document.addEventListener('DOMContentLoaded', () => {
+    const createFooter = () => {
         const footer = document.createElement('footer');
         footer.classList.add('footer');
 
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         logoImage.src = '../../images/logo/logomark.svg';
         logoImage.alt = 'logomark-white';
         logoImage.classList.add('footer-logo-image');
-        logoImage.setAttribute('loading', 'lazy');
+        logoImage.loading = 'lazy';
 
         logoLink.appendChild(logoImage);
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             { href: 'https://letterboxd.com/NANIO/', alt: 'Letterboxd' },
         ];
 
-        socialMediaItems.forEach(item => {
+        socialMediaItems.forEach((item) => {
             const socialMediaItem = document.createElement('li');
             socialMediaItem.classList.add('social-media-item');
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         footer.appendChild(socialMedia);
 
         document.body.appendChild(footer);
-    }
+    };
 
     createFooter();
 });

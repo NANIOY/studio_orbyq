@@ -9,129 +9,107 @@ document.addEventListener('DOMContentLoaded', function () {
     let touchStartX = 0;
     let touchEndX = 0;
 
-    updateBulletActive(currentIndex);
-    updateProjectName(classNames[currentIndex]);
-    updateImage();
+    updatePageElements();
+
+    function handleMouseEnter() {
+        pauseRotation();
+    }
+
+    function handleMouseLeave() {
+        startRotation();
+    }
+    // Add event listeners to the project image
+    projectImageLinks.forEach((projectImageLink) => {
+        projectImageLink.addEventListener('mouseenter', handleMouseEnter);
+        projectImageLink.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+    // Add event listeners to the pagination container
+    const paginationContainer = document.querySelector('.pagination');
+    paginationContainer.addEventListener('mouseenter', handleMouseEnter);
+    paginationContainer.addEventListener('mouseleave', handleMouseLeave);
+
 
     rightButton.addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % classNames.length;
-        updateImage();
-        updateLink();
-        updateProjectName(classNames[currentIndex]);
+        handleNavigation(1);
     });
 
     leftButton.addEventListener('click', function () {
-        currentIndex = (currentIndex - 1 + classNames.length) % classNames.length;
-        updateImage();
-        updateLink();
-        updateProjectName(classNames[currentIndex]);
+        handleNavigation(-1);
     });
 
     bulletDivs.forEach((bullet, index) => {
         bullet.addEventListener('click', function () {
             currentIndex = index;
-            updateImage();
-            updateLink();
-            updateProjectName(classNames[currentIndex]);
+            updatePageElements();
         });
     });
 
     projectImageLinks.forEach((projectImageLink) => {
         projectImageLink.addEventListener('touchstart', function (event) {
             touchStartX = event.touches[0].clientX;
+            pauseRotation();
         });
 
         projectImageLink.addEventListener('touchend', function (event) {
             touchEndX = event.changedTouches[0].clientX;
             handleSwipe();
+            startRotation();
         });
     });
+
+    function handleNavigation(offset) {
+        currentIndex = (currentIndex + offset + classNames.length) % classNames.length;
+        updatePageElements();
+    }
 
     function handleSwipe() {
         const minSwipeDistance = 50;
         const swipeDistance = touchEndX - touchStartX;
-
         if (swipeDistance > minSwipeDistance) {
-            currentIndex = (currentIndex - 1 + classNames.length) % classNames.length;
+            handleNavigation(-1);
         } else if (swipeDistance < -minSwipeDistance) {
-            currentIndex = (currentIndex + 1) % classNames.length;
+            handleNavigation(1);
         }
+    }
 
+    function updatePageElements() {
         updateImage();
         updateLink();
-        updateProjectName(classNames[currentIndex]);
+        updateBulletActive();
+        updateProjectName();
+        pauseRotation();
+        startRotation();
     }
 
     function updateImage() {
         const projectImages = document.querySelectorAll('.project-image');
 
-        // Fade out all images
+        // Reset opacity for all images
         projectImages.forEach((image) => {
-            image.classList.add('fade-out');
+            image.style.opacity = 0;
         });
 
-        // Set the new active image
+        // Set the new active image's opacity to 1
         const newImage = projectImages[currentIndex];
-        newImage.classList.add('fade-in');
-        newImage.classList.remove('fade-out');
+        newImage.style.opacity = 1;
 
-        // Reset opacity for other images
-        projectImages.forEach((image, index) => {
-            if (index !== currentIndex) {
-                image.classList.remove('fade-in');
-                image.classList.add('fade-out');
-            }
-        });
-
-        updateBulletActive(currentIndex);
+        updateBulletActive();
     }
 
-    function updateBulletActive(index) {
+    function updateBulletActive() {
         bulletDivs.forEach((bullet, i) => {
-            if (i === index) {
-                bullet.classList.add('bullet-active');
-            } else {
-                bullet.classList.remove('bullet-active');
-            }
+            bullet.classList.toggle('bullet-active', i === currentIndex);
         });
     }
 
-    // Function to pause the image rotation
     function pauseRotation() {
         clearInterval(rotationInterval);
     }
 
-    // Add event listeners to the project image
-    projectImageLinks.forEach((projectImageLink) => {
-        projectImageLink.addEventListener('mouseenter', function () {
-            pauseRotation();
-        });
-
-        projectImageLink.addEventListener('mouseleave', function () {
-            startRotation();
-        });
-    });
-
-    // Add event listeners to the pagination container
-    const paginationContainer = document.querySelector('.pagination');
-    paginationContainer.addEventListener('mouseenter', function () {
-        pauseRotation();
-    });
-
-    paginationContainer.addEventListener('mouseleave', function () {
-        startRotation();
-    });
-
-    // Start the initial rotation
-    startRotation();
-
-    // Function to start the image rotation
     function startRotation() {
         rotationInterval = setInterval(function () {
-            currentIndex = (currentIndex + 1) % classNames.length;
-            updateImage();
-            updateLink();
-            updateProjectName(classNames[currentIndex]);
+            handleNavigation(1);
         }, 5000);
     }
 
@@ -141,33 +119,27 @@ document.addEventListener('DOMContentLoaded', function () {
             'https://studio-orbyq.com/projects/copoll/',
             'https://studio-orbyq.com/projects/studio-orbyq/'
         ][currentIndex];
+
         projectImageLinks.forEach((projectImageLink) => {
             projectImageLink.setAttribute('href', currentImageLink);
         });
     }
 
-    function updateProjectName(className) {
+    function updateProjectName() {
         const projectNameElement = document.querySelector('.heading-title');
         if (projectNameElement) {
-            if (className === 'first-image') {
-                projectNameElement.textContent = 'ixpo';
-            } else if (className === 'second-image') {
-                projectNameElement.textContent = 'copoll';
-            } else if (className === 'third-image') {
-                projectNameElement.textContent = 'Studio Orbyq';
-            }
-            toggleThirdChild(className);
+            projectNameElement.textContent = classNames[currentIndex] === 'first-image'
+                ? 'ixpo'
+                : classNames[currentIndex] === 'second-image'
+                    ? 'copoll'
+                    : 'Studio Orbyq';
+            toggleThirdChild();
         }
     }
 
-    function toggleThirdChild(className) {
+    function toggleThirdChild() {
         const ulElement = document.querySelector('.icon-list-items');
         const thirdChild = ulElement.children[2];
-
-        if (className === 'second-image' || className === 'third-image') {
-            thirdChild.style.display = 'none';
-        } else {
-            thirdChild.style.display = '';
-        }
+        thirdChild.style.display = classNames[currentIndex] !== 'first-image' ? 'none' : '';
     }
 });
