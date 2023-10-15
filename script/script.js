@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    
-    
-    
     const menuToggle = document.getElementById('menu-toggle');
     const mainMenu = document.getElementById('main-menu');
     const siteTitle = document.querySelector('.site-title');
