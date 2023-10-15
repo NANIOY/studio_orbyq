@@ -224,7 +224,7 @@ button {
 }
 
 .main-menu a:hover {
-    color: #07F52C;
+    color: var(--green-40-baseline);
 }
 
 @media (min-width: 1312px) {

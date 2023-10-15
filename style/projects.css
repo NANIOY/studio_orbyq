@@ -95,28 +95,28 @@
 }
 
 .tag-branding {
-    color: #040404;
-    background: #07F52C;
+    color: var(--neutral-100-black);
+    background: var(--green-40-baseline);
 }
 
 .tag-website {
-    color: #F5F5F5;
-    background: #4A21ED;
+    color:  var(--neutral-10-white);
+    background: var(--blurple-40-baseline);
 }
 
 .tag-app {
-    color: #040404;
-    background: #F5F5F5;
+    color:  var(--neutral-100-black);
+    background: var(--neutral-10-white);
 }
 
 .tag-styleguide {
-    color: #040404;
-    background: #6AF980;
+    color:  var(--neutral-100-black);
+    background: var(--green-20);
 }
 
 .tag-visuals {
-    color: #F5F5F5;
-    background: #927AF4;
+    color: var(--neutral-10-white);
+    background: var(--blurple-20);
 }
 
 .project-column p {
@@ -148,7 +148,7 @@
 
 .project-link {
     text-decoration: none;
-    color: #F5F5F5;
+    color: var(--neutral-10-white);
 }
 
 @media (max-width: 1332px) {
