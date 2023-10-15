@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Rewrite the URL to remove the ".html" extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Rewrite the URL to remove the ".html" extension for pages in the "projects" folder
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^projects/([^\.]+)$ projects/$1.html [NC,L]
