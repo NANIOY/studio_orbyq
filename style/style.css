@@ -76,7 +76,7 @@ img {
     height: 100%;
     background-color: #040404;
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 
 
