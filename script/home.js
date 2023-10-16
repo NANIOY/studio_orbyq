@@ -108,10 +108,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startRotation() {
+        clearInterval(rotationInterval);
         rotationInterval = setInterval(function () {
             handleNavigation(1);
         }, 5000);
     }
+    
 
     function updateLink() {
         const currentImageLink = [
