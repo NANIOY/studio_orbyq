@@ -1,5 +1,7 @@
 RewriteEngine On
 
+ErrorDocument 404 /404.html
+
 # Rewrite the URL to remove the ".html" extension
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
