@@ -147,7 +147,7 @@
     max-width: 100%;
     overflow: hidden;
     justify-content: center;
-}
+ }
 
 .icon-list-item {
     list-style: none;
@@ -161,7 +161,7 @@
     height: 20px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 4px;
+    margin-top: 2px;
     margin-right: 6px;
 }
 
