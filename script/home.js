@@ -108,16 +108,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startRotation() {
+        clearInterval(rotationInterval);
         rotationInterval = setInterval(function () {
             handleNavigation(1);
         }, 5000);
     }
+    
 
     function updateLink() {
         const currentImageLink = [
             'https://studio-orbyq.com/projects/ixpo',
             'https://studio-orbyq.com/projects/copoll',
-            'https://studio-orbyq.com/projects/studio-orbyq'
+            'https://studio-orbyq.com/projects/studio_orbyq'
         ][currentIndex];
 
         projectImageLinks.forEach((projectImageLink) => {

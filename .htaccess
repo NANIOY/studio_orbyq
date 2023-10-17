@@ -11,3 +11,12 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^projects/([^\.]+)$ projects/$1.html [NC,L]
+
+# Redirect old About URL to the new URL
+Redirect 301 /about/ /about
+
+# Redirect old Projects URL to the new URL only if nothing follows "/projects"
+RedirectMatch 301 ^/projects/$ /my-work
+
+# Redirect old Contact URL to the new URL
+Redirect 301 /contact/ /contact

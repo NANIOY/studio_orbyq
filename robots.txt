@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: 
+
+User-agent: Googlebot
+Disallow: /blocked-for-google/
+
+User-agent: Bingbot
+Disallow: /blocked-for-bing/
+
+User-agent: *
+Disallow: /uncrawled-but-public/
+
+Sitemap: https://yourwebsite.com/sitemap.xml
