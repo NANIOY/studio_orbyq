@@ -262,6 +262,18 @@
     }
 }
 
+@media (max-width: 464px) {
+    .home-project-images {
+        width: 360px;
+        height: 360px;
+    }
+
+    .project-image {
+        width: 360px;
+        height: 360px;
+    }
+}
+
 @media (max-width: 800px) {
     .social-media {
         display: none;
