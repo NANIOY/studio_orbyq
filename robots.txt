@@ -10,4 +10,4 @@ Disallow: /blocked-for-bing/
 User-agent: *
 Disallow: /uncrawled-but-public/
 
-Sitemap: https://yourwebsite.com/sitemap.xml
+Sitemap: https://studio-orbyq.com/sitemap.xml
