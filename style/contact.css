@@ -64,3 +64,22 @@ footer {
         font-size: 36px;
     }
 }
+
+@media (max-height: 980px ) {
+    .email {
+        margin-top: -40px;
+    }
+    footer {
+        margin-top: -128px;
+    }
+}
+
+@media (max-height: 812px) {
+    .email {
+        margin-top: -160px;
+    }
+    footer {
+        margin-top: -256px;
+    }
+}
+
