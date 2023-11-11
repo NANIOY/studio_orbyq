@@ -327,6 +327,10 @@ body {
 }
 
 @media (max-width: 528px) {
+    .banner {
+        height: 270px;
+    }
+
     .right-column {
         width: 100%;
         margin-left: 0;
@@ -343,6 +347,10 @@ body {
 }
 
 @media (max-width: 365px) {
+    .banner {
+        height: 248px;
+    }
+
     .info-box {
         flex-basis: calc(50% - 10px);
         margin-right: 100px;
