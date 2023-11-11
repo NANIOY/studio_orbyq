@@ -176,6 +176,10 @@
 }
 
 @media (max-width: 596px) {
+    .image-container {
+        height: 256px;
+    }
+
     .tags {
         gap: 8px;
         top: -40px;
