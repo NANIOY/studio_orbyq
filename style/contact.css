@@ -76,9 +76,18 @@ footer {
 
 @media (max-width: 768px) and (max-height: 812px) {
     .email {
-        margin-top: -160px;
+        margin-top: -80px;
     }
     footer {
-        margin-top: -256px;
+        margin-top: -128px;
+    }
+}
+
+@media (max-width: 768px) and (max-height: 760px) {
+    .email {
+        margin-top: -120px;
+    }
+    footer {
+        margin-top: -200px;
     }
 }
