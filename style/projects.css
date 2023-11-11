@@ -40,8 +40,12 @@
     overflow: hidden;
 }
 
+.image-container-vertical {
+    height: 907.2px;
+}
+
 .image-container-horizontal {
-    height: 369px;
+    height: 384px;
 }
 
 .projects-image-small,
