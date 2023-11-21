@@ -19,6 +19,14 @@
     user-select: none;
     margin-bottom: 278px;
     height: 24px;
+    text-decoration: var(--blurple-40-baseline) wavy underline;
+    transition: color 0.2s;
+
+}
+
+.random-quote p:hover {
+    color: var(--blurple-40-baseline);
+    transition: color 0.2s;
 }
 
 .email {
