@@ -120,7 +120,7 @@ body {
     content: "-";
     position: absolute;
     left: 0;
-    color: var(--blurple-30);
+    color: var(--blurple-40-baseline);
 }
 
 .link-list li {
@@ -132,6 +132,7 @@ body {
     color: var(--neutral-10-white);
     transition: 0.2s;
     font-weight: 900;
+    text-decoration: var(--blurple-40-baseline) wavy underline;
 }
 
 .link-list li a:hover {
