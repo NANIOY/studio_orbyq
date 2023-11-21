@@ -120,6 +120,7 @@ body {
     content: "-";
     position: absolute;
     left: 0;
+    color: var(--blurple-30);
 }
 
 .link-list li {
@@ -128,11 +129,12 @@ body {
 
 .link-list li a {
     text-decoration: none;
-    color: var(--blurple-40-baseline);
+    color: var(--blurple-30);
+    transition: 0.2s;
 }
 
 .link-list li a:hover {
-    color: var(--blurple-30);
+    color: var(--blurple-40-baseline);
 }
 
 
