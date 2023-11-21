@@ -129,8 +129,9 @@ body {
 
 .link-list li a {
     text-decoration: none;
-    color: var(--blurple-30);
+    color: var(--neutral-10-white);
     transition: 0.2s;
+    font-weight: 900;
 }
 
 .link-list li a:hover {
