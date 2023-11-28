@@ -12,6 +12,10 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^projects/([^\.]+)$ projects/$1.html [NC,L]
 
+# Redirect wwww to non-www
+RewriteCond %{HTTP_HOST} ^www\.studio-orbyq\.com [NC]
+RewriteRule ^(.*)$ https://studio-orbyq.com/$1 [L,R=301]
+
 # Redirect old About URL to the new URL
 Redirect 301 /about/ /about
 
