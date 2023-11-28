@@ -16,6 +16,10 @@ RewriteRule ^projects/([^\.]+)$ projects/$1.html [NC,L]
 RewriteCond %{HTTP_HOST} ^www\.studio-orbyq\.com [NC]
 RewriteRule ^(.*)$ https://studio-orbyq.com/$1 [L,R=301]
 
+# Redirect http to https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Redirect old About URL to the new URL
 Redirect 301 /about/ /about
 
