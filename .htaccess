@@ -28,3 +28,7 @@ RedirectMatch 301 ^/projects/$ /my-work
 
 # Redirect old Contact URL to the new URL
 Redirect 301 /contact/ /contact
+
+<FilesMatch "\.(jpg|jpeg|png|gif|js|css|woff|woff2|ttf|svg|webp)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
