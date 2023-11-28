@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
         projectImageLink.addEventListener('touchstart', function (event) {
             touchStartX = event.touches[0].clientX;
             pauseRotation();
-        });
-
+        }, { passive: true });
+    
         projectImageLink.addEventListener('touchend', function (event) {
             touchEndX = event.changedTouches[0].clientX;
             handleSwipe();
             startRotation();
-        });
-    });
+        }, { passive: true });
+    });    
 
     function handleNavigation(offset) {
         currentIndex = (currentIndex + offset + classNames.length) % classNames.length;
