@@ -32,3 +32,19 @@ Redirect 301 /contact/ /contact
 <FilesMatch "\.(gif|js|css|otf|ttf|svg|webp)$">
     Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
+
+<IfModule mod_deflate.c>
+    # Enable compression
+    SetOutputFilter DEFLATE
+
+    # Force compression for the following file types
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
+
+    # Do not compress certain file types
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+    # Don't compress images, they're already compressed
+    SetEnvIfNoCase Request_URI \.(?:webp|svg)$ no-gzip dont-vary
+</IfModule>
