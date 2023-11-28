@@ -1,27 +1,33 @@
 @font-face {
     font-family: 'Twilio-Sans-Mono-ExtraBold';
     src: url('../fonts/heading/TwilioSansMono-Extrabold.otf') format('opentype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Twilio-Sans-Mono-Bold';
     src: url('../fonts/heading/TwilioSansMono-Bold.otf') format('opentype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Sloth-Regular';
     src: url('../fonts/body/Sloth-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Sloth-SemiBold';
     src: url('../fonts/body/Sloth-SemiBold.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Sloth-Bold';
     src: url('../fonts/body/SLOTH\ BOLD.ttf') format('truetype');
+    font-display: swap;
 }
+
 
 :root {
     /* neutral colors */
