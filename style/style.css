@@ -61,6 +61,9 @@
     --blurple-60: #2C148E;
     --blurple-70: #1E0D5F;
 
+    /* glassmorphism */
+    --glass-gradient: rgba(4, 4, 4, 0.3);
+
     scrollbar-color: var(--neutral-70) var(--neutral-100-black);
     scrollbar-width: thin;
 }
