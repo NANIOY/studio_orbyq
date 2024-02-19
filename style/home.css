@@ -27,7 +27,6 @@ body, html {
     max-width: 1312px;
     width: 100%;
     height: 712px;
-    background-color: red;
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -36,11 +35,11 @@ body, html {
     color: var(--neutral-10-white);
     display: flex;
     flex-direction: row;
+    gap: 144px;
 }
 
 .container__left {
-    background-color: blue;
-    width: calc(100% - 59.75%);
+    width: calc(100% - 48.78%);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -48,8 +47,8 @@ body, html {
 }
 
 .container__right {
-    background-color: purple;
-    width: 59.75%;
+    max-width: 48.78%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -60,7 +59,6 @@ body, html {
     font-family: 'Twilio-Sans-Mono-Bold';
     font-size: 64px;
     line-height: 110%;
-    background-color: green;
     margin: 0 0 32px 0;
 }
 
@@ -70,5 +68,42 @@ body, html {
     text-transform: uppercase;
     color: var(--green-40-baseline);
     margin: 0;
-    background-color: yellow;
+}
+
+.container__right__image {
+    width: 100%;
+    height: 100%;
+}
+
+.container__right__image__1 {
+    background-image: url('../images/home/content/studio_orbyq_icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagination {
+    position: fixed;
+    bottom: 48px;
+    left: calc(50% - 72px);
+    display: flex;
+    flex: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.pagination__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border: 2px solid var(--neutral-10-white);
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.pagination__dot__active {
+    width: 20px;
+    height: 20px;
+    border: 0px;
+    background-color: var(--green-40-baseline);
 }
