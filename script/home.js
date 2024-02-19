@@ -147,34 +147,3 @@
 // });
 
 
-
-const container = document.querySelector('.container');
-const blurryBackground = document.querySelector('.blurry-background');
-const cursor = document.createElement('div');
-cursor.classList.add('cursor');
-document.body.appendChild(cursor);
-
-container.addEventListener('mousemove', (e) => {
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-
-  // Position the cursor
-  cursor.style.left = mouseX - cursor.offsetWidth / 2 + 'px';
-  cursor.style.top = mouseY - cursor.offsetHeight / 2 + 'px';
-
-  // Calculate the distance of each pixel from the cursor
-  const containerRect = container.getBoundingClientRect();
-  const dx = mouseX - containerRect.left - containerRect.width / 2;
-  const dy = mouseY - containerRect.top - containerRect.height / 2;
-  const distance = Math.sqrt(dx * dx + dy * dy);
-
-  // Calculate the radius of the circle
-  const circleRadius = 50; // Adjust as needed
-
-  // Apply the blur effect to the background based on the distance from the cursor
-  const blurRadius = Math.max(0, Math.min(10, (distance - circleRadius) / 10)); // Adjust the factor as needed
-  blurryBackground.style.filter = `blur(${blurRadius}px)`;
-});
-
-
-
