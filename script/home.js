@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const rightButton = document.querySelector('.right');
     const leftButton = document.querySelector('.left');
     const bulletDivs = document.querySelectorAll('.bullet');
-    const classNames = ['first-image', 'second-image', 'third-image'];
+    const classNames = ['first-image', 'second-image', 'third-image', 'fourth-image'];
     let rotationInterval;
     let currentIndex = 0;
     let touchStartX = 0;
@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', function () {
             touchStartX = event.touches[0].clientX;
             pauseRotation();
         }, { passive: true });
-    
+
         projectImageLink.addEventListener('touchend', function (event) {
             touchEndX = event.changedTouches[0].clientX;
             handleSwipe();
             startRotation();
         }, { passive: true });
-    });    
+    });
 
     function handleNavigation(offset) {
         currentIndex = (currentIndex + offset + classNames.length) % classNames.length;
@@ -111,15 +111,16 @@ document.addEventListener('DOMContentLoaded', function () {
         clearInterval(rotationInterval);
         rotationInterval = setInterval(function () {
             handleNavigation(1);
-        }, 2800);
+        }, 90000000);
     }
-    
+
 
     function updateLink() {
         const currentImageLink = [
             'https://studio-orbyq.com/projects/ixpo',
             'https://studio-orbyq.com/projects/copoll',
-            'https://studio-orbyq.com/projects/studio_orbyq'
+            'https://studio-orbyq.com/projects/studio_orbyq',
+            'https://studio-orbyq.com/projects/kroo'
         ][currentIndex];
 
         projectImageLinks.forEach((projectImageLink) => {
@@ -131,10 +132,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const projectNameElement = document.querySelector('.heading-title');
         if (projectNameElement) {
             projectNameElement.textContent = classNames[currentIndex] === 'first-image'
-                ? 'ixpo'
+                ? 'kroo'
                 : classNames[currentIndex] === 'second-image'
-                    ? 'copoll'
-                    : 'Studio Orbyq';
+                    ? 'ixpo'
+                    : classNames[currentIndex] === 'third-image'
+                        ? 'copoll'
+                        : 'Studio Orbyq';
+
             toggleThirdChild();
         }
     }
@@ -142,6 +146,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function toggleThirdChild() {
         const ulElement = document.querySelector('.icon-list-items');
         const thirdChild = ulElement.children[2];
-        thirdChild.style.display = classNames[currentIndex] !== 'first-image' ? 'none' : '';
+        thirdChild.style.display = classNames[currentIndex] === 'first-image' || classNames[currentIndex] === 'second-image' ? '' : 'none';
     }
 });
