@@ -139,12 +139,11 @@
 .column-header h2 {
     font-family: 'Twilio-Sans-Mono-Bold';
     font-size: 32px;
-    flex: 90%;
+    flex: 1;
     margin: 0;
 }
 
 .year {
-    flex: 10%;
     text-align: right;
     font-size: 16px !important;
     font-family: 'Sloth-SemiBold' !important;
