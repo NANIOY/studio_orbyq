@@ -117,10 +117,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateLink() {
         const currentImageLink = [
+            'https://studio-orbyq.com/projects/kroo',
             'https://studio-orbyq.com/projects/ixpo',
             'https://studio-orbyq.com/projects/copoll',
             'https://studio-orbyq.com/projects/studio_orbyq',
-            'https://studio-orbyq.com/projects/kroo'
         ][currentIndex];
 
         projectImageLinks.forEach((projectImageLink) => {
