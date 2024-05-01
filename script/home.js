@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
         clearInterval(rotationInterval);
         rotationInterval = setInterval(function () {
             handleNavigation(1);
-        }, 90000000);
+        }, 3600);
     }
 
 
