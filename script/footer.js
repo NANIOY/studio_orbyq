@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         footer.classList.add('footer');
 
         const logoLink = document.createElement('a');
-        logoLink.href = 'https://studio-orbyq.com/contact';
+        logoLink.href = 'https://orbyq.com/contact';
         logoLink.classList.add('footer-logo-link');
 
         const logoImage = document.createElement('img');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const contactTitle = document.createElement('h3');
 
         const contactLink = document.createElement('a');
-        contactLink.href = 'https://studio-orbyq.com/contact';
+        contactLink.href = 'https://orbyq.com/contact';
         contactLink.classList.add('contact-link');
         contactLink.textContent = "Let's Talk";
 

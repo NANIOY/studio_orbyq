@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://studio-orbyq.com/</loc>
+        <loc>https://orbyq.com/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://studio-orbyq.com/my-work</loc>
+        <loc>https://orbyq.com/my-work</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://studio-orbyq.com/about</loc>
+        <loc>https://orbyq.com/about</loc>
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://studio-orbyq.com/contact</loc>
+        <loc>https://orbyq.com/contact</loc>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <!-- project specific pages -->
     <url>
-        <loc>https://studio-orbyq.com/projects/ixpo</loc>
+        <loc>https://orbyq.com/projects/ixpo</loc>
         <changefreq>never</changefreq>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://studio-orbyq.com/projects/copoll</loc>
+        <loc>https://orbyq.com/projects/copoll</loc>
         <changefreq>never</changefreq>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://studio-orbyq.com/projects/studio_orbyq</loc>
+        <loc>https://orbyq.com/projects/studio_orbyq</loc>
         <changefreq>never</changefreq>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://studio-orbyq.com/projects/ugc</loc>
+        <loc>https://orbyq.com/projects/ugc</loc>
         <changefreq>never</changefreq>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://studio-orbyq.com/projects/zen_garden</loc>
+        <loc>https://orbyq.com/projects/zen_garden</loc>
         <changefreq>never</changefreq>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://studio-orbyq.com/projects/writer_access</loc>
+        <loc>https://orbyq.com/projects/writer_access</loc>
         <changefreq>never</changefreq>
         <priority>0.0</priority>
     </url>
