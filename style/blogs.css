@@ -1,0 +1,52 @@
+body {
+    font-family: 'Sloth-Regular';
+}
+
+div {
+    text-align: left;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    margin-bottom: 4px;
+    margin-top: 112px;
+}
+
+h2 {
+    font-family: 'Twilio-Sans-Mono-Bold';
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.link-list {
+    list-style-type: none;
+    padding: 8px 0 0 0;
+}
+
+.custom-list-item {
+    padding-left: 16px;
+    position: relative;
+}
+
+.custom-list-item:before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: var(--blurple-40-baseline);
+}
+
+.link-list li {
+    margin-bottom: 10px;
+}
+
+.link-list li a {
+    text-decoration: none;
+    color: var(--neutral-10-white);
+    transition: 0.2s;
+    font-weight: 900;
+    text-decoration: var(--blurple-40-baseline) wavy underline;
+}
+
+.link-list li a:hover {
+    color: var(--blurple-40-baseline);
+}
