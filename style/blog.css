@@ -6,6 +6,12 @@ div {
     text-align: left;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 .banner {
     height: 256px;
 }
@@ -64,6 +70,10 @@ ol {
 .email {
     color: var(--green-40-baseline);
     font-size: 20px;
+}
+
+img {
+    margin: 40px 0;
 }
 
 .list-image, .image-list {
